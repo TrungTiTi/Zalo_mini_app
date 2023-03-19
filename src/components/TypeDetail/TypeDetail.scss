@@ -1,0 +1,13 @@
+.type-detail {
+  .type_list {
+    display: flex;
+    overflow: scroll;
+    .type_list-item {
+      width: 50%;
+    }
+    img {
+      width: 150px;
+      height: 100px;
+    }
+  }
+}

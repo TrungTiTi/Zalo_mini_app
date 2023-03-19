@@ -1,0 +1,37 @@
+.page {
+  .section-container {
+    .slide-title-img {
+      display: flex;
+      flex: 1 1;
+      overflow: hidden;
+      overflow-x: overlay;
+      width: 100%;
+      .title-img {
+        width: 200%;
+        height: 100px;
+      }
+    }
+  }
+  .text-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.3);
+  }
+
+  .home-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .home-content-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 150px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
