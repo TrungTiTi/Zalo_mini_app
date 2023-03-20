@@ -60,7 +60,7 @@ const HomePage: React.FunctionComponent = observer(() => {
               <div className="home-content-item">
                 <img
                   src={item?.image}
-                  onClick={() => navigate(`/type/${item.title}`)}
+                  onClick={() => navigate(`/type/${item.id}`)}
                 />
                 <p>{item?.name}</p>
               </div>
