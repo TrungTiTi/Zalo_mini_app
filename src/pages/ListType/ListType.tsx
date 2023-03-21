@@ -18,7 +18,7 @@ const ListType = () => {
       );
       setChildCateArr(listChildCate);
     }
-  }, [params?.id]);
+  }, [params?.id, listCateStore.listCateData.length]);
   console.log("params", childCateArr);
   return (
     <div>
