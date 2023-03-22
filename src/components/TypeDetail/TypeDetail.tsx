@@ -19,15 +19,15 @@ const TypeDetail: React.FC<ITypeDetail> = (props) => {
     if (listCateId) {
       handleGetListProduct(listCateId);
     }
-  }, [listCateId]);
+  }, [listCateId, productStore.productData.length]);
 
   const handleGetListProduct = (id: string) => {
     const listProductR = productStore.productData.filter(
-      (e) => e.listCateId === listCateId
+      (e) => e.listCateId === id
     );
     setListProduct(listProductR);
   };
-  console.log("listCateId", listCateId);
+  console.log("listCateId", productStore.productData);
   return (
     <div className="type-detail">
       <div className="type_title">Bao hiem kinh doanh</div>

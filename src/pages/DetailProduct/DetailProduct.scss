@@ -1,0 +1,11 @@
+.accordion {
+  transition: 1s;
+}
+.panel {
+  &.active {
+    display: block;
+  }
+  &.unactive {
+    display: none;
+  }
+}
